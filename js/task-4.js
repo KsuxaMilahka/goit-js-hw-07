@@ -16,7 +16,12 @@ function loginFormSubmit(event) {
       return;
   }
 
-  console.log(`Login: ${email}, Password: ${password}`);
+  const formData = {
+    email: email,
+    password: password
+  };
+
+  console.log(formData);
   form.reset();
-};
+}
 
